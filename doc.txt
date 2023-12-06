@@ -1,0 +1,50 @@
+Starter Lit:
+
+Command in Directory:
+
+yarn init -2
+
+install stable yarn:
+yarn set version stable
+yarn install
+
+add to app.js
+import {LitElement, html} from 'lit-element';
+
+```````````````````````````````
+install rollup
+npm install @rollup/plugin-node-resolve --save-dev
+
+```````````````````````````````
+Create a rollup.config.js configuration file and import the plugin:
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+
+export default {
+  input: 'src/index.js',
+  output: {
+    dir: 'output',
+    format: 'cjs'
+  },
+  plugins: [nodeResolve()]
+};
+
+``````````````````````````
+install lit:
+npm i lit-element
+
+create first component and create html and import to use it .
+
+
+install dev server :
+npm i -D es-dev-server
+
+Add a dev server command to package.json:
+
+{
+  "scripts": {
+    "serve": "es-dev-server --app-index index.html --node-resolve --watch --open"
+  }
+}
+
+run :
+npm run serve
