@@ -1,7 +1,7 @@
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 
 export default {
-  input: './index.js',
+  input: './app.ts',
   output: {
     dir: 'output',
     format: 'cjs'

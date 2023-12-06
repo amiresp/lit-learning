@@ -48,3 +48,7 @@ Add a dev server command to package.json:
 
 run :
 npm run serve
+
+install : 
+@typescript-eslint/parser
+@typescript-eslint/eslint-plugin
